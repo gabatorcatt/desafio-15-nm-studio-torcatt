@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos NM Studio</title>
+    <meta name="description=" content="Déjenos cualquier consulta o queja llenando este form. Nuestra intención es crecer cada vez más y su opinión es valiosa para lograrlo!">
+    <meta name="keywords=" content="contacto, quejas nm studio, contacto nm studio, consultas, contacto nicole maquillando">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/main.css"> 
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">    <!--quiero justify evenly-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__menu-mine">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" 
+                            href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Servicios
+                            </a>
+                            <ul class="dropdown-menu nav__menu-mine__submenu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Maquillaje</a></li>
+                                <li><a class="dropdown-item" href="#">Cejas</a></li>
+                                <li><a class="dropdown-item" href="#">Pestañas</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="../vistas/servicios.html">Ver Todo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.tiendanube.com/?utm_source=google&utm_medium=cpc&utm_campaign=ar-web-search-brand-region-1-desktop-device_c-id_416305783432&gclid=Cj0KCQjwjo2JBhCRARIsAFG667XQ8V1-iC7igNA-2PbfFf7FNfHFUt9eQQajszZ0YADZ4JL9Q1d0FbEaAiCnEALw_wcB">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vistas/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vistas/nuestro-studio.html">Nuestro Estudio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../vistas/contacto.html">Contáctenos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid header__logo">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-lg-2"></div>
+                <div class="col-md-6 col-sm-6 col-lg-8 header__logo__placement">
+                <a href="../index.html"><img class="header__logo__img" src="../Img/logo-final.png"  alt="Logo"></a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-lg-2"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Sugerencias o Quejas</legend>
+                    <div class="form-inside">
+                        <label for="info-contacto">Nombre y Apellido:</label>
+                        <input type="text" name="info-contacto" placeholder="Nombre"/>
+                        <input type="text" name="info-contacto" placeholder="Apellido"/>
+                        <label for="info-contacto">Teléfono:</label>
+                        <select name="cod-area">
+                            <option value=Argentina>+54</option>
+                            <option value=Argentina>+58</option>
+                            <option value=Argentina>+1</option>
+                        </select>
+                        <input type="text" name="info-contacto" placeholder="##-###"/>
+                    </div>
+                    <div class="form-inside">
+                        <label for="sugerencias-o-quejas">Tipo:</label>
+                        <input type="radio" name="sugerencias-o-quejas" value="sugerencia"/>Sugerencia
+                        <input type="radio" name="sugerencias-o-quejas" value="queja"/>Queja
+                        <input type="radio" name="sugerencias-o-quejas" value="otro"/>Otro
+                    </div>
+                    <div class="form-inside">
+                        <label for="sugerencias-o-quejas">Mensaje:</label>
+                    </div>
+                    <div class="form-inside">
+                        <textarea name="sugerencias-o-quejas" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    </div> 
+                    <div class="form-inside">
+                        <label for="condicion">Acepta que sea contáctado vía WhatsApp:</label>
+                    </div>
+                    <div class="form-inside">
+                        <input type="checkbox" name="condicion" value="1">Acepto</input>
+                    </div>
+                    <div class="form-inside">
+                        <input type="reset"  value="Borrar">
+                        <input type="submit" value="Enviar">
+                    </div> 
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__button">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary footer__button__mine" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Turnos y Consultas</button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Continuar a WhastApp</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Al hacer click en "Aceptar", se abrirá WhatsApp.
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-warning"><a href="https://web.whatsapp.com/">Continuar</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__derechos">
+                <p id="footer__derechos__sentence">@NM STUDIO 2019 Todos los Derechos Reservados</p>
+            </div>
+        </div>
+    </footer>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
